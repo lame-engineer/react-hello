@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("deploy") {
             steps {
-                git clone ''
+                git clone 'https://github.com/lame-engineer/react-hello.git'
                 npm start 
             }
         }
