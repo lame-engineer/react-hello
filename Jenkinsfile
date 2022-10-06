@@ -5,7 +5,7 @@ pipeline {
     stage('Clone') {
       steps {
         git 'https://github.com/lame-engineer/react-hello.git'
-    stage('install') {
+    stage('Build') {
       steps {
         sh 'npm install'
       }}
