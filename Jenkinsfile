@@ -6,9 +6,9 @@ pipeline {
       steps {
         git 'https://github.com/lame-engineer/react-hello.git'
         sh 'npm install'
-    post {
-      success {
-        slackSend message: "Build deployed successfully - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+  post {
+    success {
+      slackSend message: "Build deployed successfully - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
     }
 }
       }}}}
