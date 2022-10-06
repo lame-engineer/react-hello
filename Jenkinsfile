@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         git 'https://github.com/lame-engineer/react-hello.git'
-    stage('Build') {
+    stage('Test') {
       steps {
         sh 'npm install'
   post {
